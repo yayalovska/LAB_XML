@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="laab2.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollView Grid.Column="0">
+            <StackLayout Padding="10">
+                <Label Text="Student Parliament Events" FontSize="Large" HorizontalOptions="CenterAndExpand"  Margin="0,0,0,20"/>
+
+                <RadioButton Content="  LINQ to XML" x:Name="Linq" IsChecked="True" GroupName="methods"/>
+                <RadioButton Content="  DOM" x:Name="Dom" GroupName="methods"/>
+                <RadioButton Content="  SAX" x:Name="Sax" GroupName="methods" Margin="0,0,0,30"/>
+
+                <Entry Placeholder="Enter Name" x:Name="Name" Margin="0,0,0,10"/>
+                <Entry Placeholder="Enter Faculty" x:Name="Faculty" Margin="0,0,0,10"/>
+                <Entry Placeholder="Enter Department" x:Name="Department" Margin="0,0,0,10"/>
+                <Entry Placeholder="Enter Specialty" x:Name="Specialty" Margin="0,0,0,10"/>
+                <Entry Placeholder="Enter Timing" x:Name="Timing" Margin="0,0,0,10"/>
+
+            <StackLayout Orientation="Horizontal" Spacing="365" Margin="0,0,0,100">
+                <Button Clicked="Search_Submit" Text="Search" HeightRequest="50" BackgroundColor="#3498db" TextColor="White"/>
+                <Button Clicked="Clear_Fields" Text="Clear Fields" HeightRequest="50" TextColor="#34495e" BorderColor="#34495e" BorderWidth="2"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Button Clicked="Export_HTML" Text="Export HTML" HeightRequest="50" BackgroundColor="#3498db" TextColor="White"/>
+                <Button Clicked="OnExitButtonClicked" Text="Exit" HeightRequest="50" BackgroundColor="#34495e" TextColor="White"/>
+            </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <CollectionView Grid.Column="1" x:Name="MyCollectionView">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout VerticalOptions="CenterAndExpand" BackgroundColor="#EEEEEE" Padding="10">
+                        <Label Text="{Binding Name}" TextColor="Black" FontSize="Medium"/>
+                        <Label Text="{Binding Faculty}" TextColor="Black" FontSize="Medium"/>
+                        <Label Text="{Binding Department}" TextColor="Black" FontSize="Medium"/>
+                        <Label Text="{Binding Specialty}" TextColor="Black" FontSize="Medium"/>
+                        <Label Text="{Binding Timing}" TextColor="Black" FontSize="Medium"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="laab2.app/Contents/MacOS/laab2">
+      <BCSymbolMapName>laab2.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>laab2.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/yanayalovska/Projects/laab2/laab2/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>laab2.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/yanayalovska/Projects/laab2/laab2</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students_parliament>
+    <event>
+        <name>Student Council Meeting</name>
+        <faculty>FCSC</faculty>
+        <department>Department 1</department>
+        <specialty>Computer Science</specialty>
+        <timing>14:00 - 16:00</timing>
+    </event>
+    <event>
+        <name>Debating Competition</name>
+        <faculty>FCSC</faculty>
+        <department>Department 2</department>
+        <specialty>Information Technology</specialty>
+        <timing>10:00 - 14:00</timing>
+    </event>
+    <event>
+        <name>Leadership Workshop</name>
+        <faculty>FEAS</faculty>
+        <department>Department 3</department>
+        <specialty>Civil Engineering</specialty>
+        <timing>09:00 - 12:00</timing>
+    </event>
+    <event>
+        <name>Cultural Exchange</name>
+        <faculty>FASS</faculty>
+        <department>Department 4</department>
+        <specialty>Psychology</specialty>
+        <timing>13:30 - 18:30</timing>
+    </event>
+    <event>
+        <name>Environmental Awareness Campaign</name>
+        <faculty>FMS</faculty>
+        <department>Department 5</department>
+        <specialty>Environmental Science</specialty>
+        <timing>16:00 - 18:00</timing>
+    </event>
+    <event>
+        <name>Social Justice Seminar</name>
+        <faculty>FHSS</faculty>
+        <department>Department 6</department>
+        <specialty>Sociology</specialty>
+        <timing>11:00 - 14:00</timing>
+    </event>
+    <event>
+        <name>Sports Meet</name>
+        <faculty>FMS</faculty>
+        <department>Department 7</department>
+        <specialty>Physical Education</specialty>
+        <timing>09:00 - 15:00</timing>
+    </event>
+</students_parliament>
